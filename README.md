@@ -14,10 +14,10 @@ Um pacote para descobrir se um determinado dia é feriado nacional 📅
 ```js
 
 const eFeriado = require('eferiado')
-const natal = eFeriado('25/12') // [true,{"nome": "Natal"}]
+const _25deDezembro = eFeriado('25/12') // { "eFeriado": true, "nome": "Natal" }
 
-if(natal[0]) {
-    alert(`É ${natal[1].nome} hoje!`)
+if(_25deDezembro.eFeriado) {
+    alert(`É ${_25deDezembro.nome} hoje!`)
 }
 
 ```
