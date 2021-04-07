@@ -1,0 +1,76 @@
+{
+    "feriados": [
+        {
+            "nome": "Ano Novo",
+            "data": "01/01"
+        },
+        {
+            "nome": "Carnaval",
+            "data": "16/02"
+        },
+        {
+            "nome": "Dia internacional da Mulher",
+            "data": "08/03"
+        },
+        {
+            "nome": "Sexta feira santa",
+            "data": "02/04"
+        },
+        {
+            "nome": "Páscoa",
+            "data": "04/04"
+        },
+        {
+            "nome": "Tiradentes",
+            "data": "21/04"
+        },
+        {
+            "nome": "Dia do Trabalho",
+            "data": "01/05"
+        },
+        {
+            "nome": "Dia das mães",
+            "data": "09/05"
+        },
+        {
+            "nome": "Corpus Christi",
+            "data": "03/06"
+        },
+        {
+            "nome": "Dia dos namorados",
+            "data": "12/06"
+        },
+        {
+            "nome": "Dia dos pais",
+            "data": "08/08"
+        },
+        {
+            "nome": "Dia da Indepedência do Brasil",
+            "data": "07/09"
+        },
+        {
+            "nome": "Dia das Crianças",
+            "data": "12/10"
+        },
+        {
+            "nome": "Nossa Senhora aparecida",
+            "data": "12/10"
+        },
+        {
+            "nome": "Dia do professor",
+            "data": "15/10"
+        },
+        {
+            "nome": "Finados",
+            "data": "02/11"
+        },
+        {
+            "nome": "Proclamação da República",
+            "data": "15/11"
+        },
+        {
+            "nome": "Natal",
+            "data": "25/12"
+        }
+    ]
+}
