@@ -1,8 +1,8 @@
 {
   "name": "eferiado",
   "publishConfig": "eferiado",
-  "version": "1.0.5",
-  "description": "Um pacote para descobrir se um determiando dia é feriado",
+  "version": "1.0.6",
+  "description": "Um pacote para descobrir se um determinado dia é feriado",
   "main": "index.js",
   "repository": {
     "type": "git",
