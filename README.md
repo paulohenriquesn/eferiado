@@ -6,7 +6,7 @@ Um pacote para descobrir se um determinado dia é feriado nacional ou regional �
 1. Instale o pacote 👇
 
 ```sh
-   npm -i eferiado
+   npm -i eferiado | yarn add eferiado
    ```
 
 2. Utilize ele em seu codigo 😁
