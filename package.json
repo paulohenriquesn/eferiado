@@ -4,8 +4,13 @@
   "version": "1.0.4",
   "description": "Um pacote para descobrir se um determiando dia é feriado",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulohenriquesn/eferiado.git"
+  },
   "keywords": [
     "feriado",
+    "feriados",
     "feriado nacional",
     "ferias",
     "data"
