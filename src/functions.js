@@ -21,36 +21,15 @@ function addDays(date, days) {
     result.month =  result.month.length == 1 ? `0${result.month}` : `${result.month}`
     return result
   }
-
-const getSextaSanta = () => {
+  
+const getMoveDate = (move_days) => {
     let object = getEaster();
 
     let actualYear = new Date().getFullYear();
     let date = new Date(`${actualYear} ${object.month} ${object.day}`);
     
-    let result = addDays(date,-2)
+    let result = addDays(date, move_days)
     return result;
 }
 
-const getCorpusChristi = () => {
-let object = getEaster();
-
-let actualYear = new Date().getFullYear();
-let date = new Date(`${actualYear} ${object.month} ${object.day}`);
-
-let result = addDays(date,60)
-return result;
-}
-
-const getCarnival = () => {
-    let object = getEaster();
-    
-    let actualYear = new Date().getFullYear();
-    
-    let date = new Date(`${actualYear} ${object.month} ${object.day}`);
-    let result = addDays(date,-47)
-    
-    return result;
-    }
-
-module.exports = {getEaster, getCorpusChristi,getCarnival,getSextaSanta}
+module.exports = {getMoveDate}

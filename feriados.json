@@ -1,6 +1,22 @@
 {
     "feriados": [
         {
+            "nome": "Pascoa",
+            "move": 0
+        },
+        {
+            "nome": "Corpus Christi",
+            "move": 60
+        },
+        {
+            "nome": "Carnaval",
+            "move": -47
+        },
+        {
+            "nome": "Sexta Santa",
+            "move": -2
+        },
+        {
             "nome": "Ano Novo",
             "data": "01/01"
         },
