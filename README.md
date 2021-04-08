@@ -21,3 +21,14 @@ if(_25deDezembro.eFeriado) {
 }
 
 ```
+
+#### Utilizando Date
+
+```js
+
+const eFeriado = require('eferiado')
+const _25deDezembro = eFeriado(new Date(2021,12,25)) // { "eFeriado": true, "nome": "Natal" }
+
+if(_25deDezembro.eFeriado) {
+    alert(`É ${_25deDezembro.nome} hoje!`)
+}
