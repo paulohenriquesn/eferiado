@@ -3,7 +3,7 @@ const funcs = require('./src/functions')
 
 const IsADateHoliday = (date) => {
 
-    let object_return = { eFeriado: false, eFeriadoRegional: false, feriadoNome: null, feriadoRegionalNome: null };
+    let object_return = { eFeriadoNacional: false, eFeriadoRegional: false, feriadoNacional: null, feriadosRegionais: null };
 
     if (date instanceof Date) {
         //Meses no Javascript começam por 0
@@ -29,19 +29,20 @@ const IsADateHoliday = (date) => {
         }
     });
 
-    const findRegionalHoliday = feriados.regionais.find(x => {
+    const findRegionalHoliday = feriados.regionais.filter(x => {
         return x.data == date
     });
 
     if (findHoliday) {
-        object_return.eFeriado = true;
-        object_return.feriadoNome = findHoliday.nome;
+        object_return.eFeriadoNacional = true;
+        object_return.feriadoNacional = findHoliday.nome;
     }
 
-    if (findRegionalHoliday) {
+    if (findRegionalHoliday.length) {
         object_return.eFeriadoRegional = true;
-        object_return.feriadoRegionalNome = findRegionalHoliday.nome;
-        object_return.feriadoRegionalEstado = findRegionalHoliday.estado;
+        object_return.feriadosRegionais = findRegionalHoliday.map(({nome, estado}) => {
+            return { nome,  estado }
+        })
     }
 
     return object_return;
