@@ -29,8 +29,6 @@ const IsADateHoliday = (date) => {
         }
     });
 
-    console.log(feriados.regionais.find(i => i.data == ''))
-
     const findRegionalHoliday = feriados.regionais.find(x => {
         return x.data == date
     });
