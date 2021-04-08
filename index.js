@@ -3,8 +3,12 @@ const feriados = require('./feriados.json').feriados
 const funcs = require('./src/functions')
 
 const IsADateHoliday = (date) => {
-
-    date = date.match(/(\d\d\/\d\d)+/)[0];
+    if(date instanceof Date){
+        //Meses no Javascript começam por 0
+        date = String(date.getDate()).padStart(2, '0') + '/' + String(date.getMonth() + 1).padStart(2, '0')
+    }else{
+        date = date.match(/(\d\d\/\d\d)+/)[0];
+    }
 
     const findHoliday = feriados.find(x => {
         //Verifica se possui o parâmetro move, relativo a quantidade de dias de
