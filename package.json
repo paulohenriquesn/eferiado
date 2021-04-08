@@ -1,7 +1,7 @@
 {
   "name": "eferiado",
   "publishConfig": "eferiado",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Um pacote para descobrir se um determinado dia é feriado",
   "main": "index.js",
   "repository": {
@@ -15,11 +15,11 @@
     "ferias",
     "data"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/paulohenriquesn/eferiado.git"
-  },
   "author": "Paulo Henrique",
+  "contributors": [
+    "Felipe Correa @felps-dev",
+    "Rafael Antunes @rmrantunes"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/paulohenriquesn/eferiado/issues"
