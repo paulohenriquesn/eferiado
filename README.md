@@ -1,5 +1,5 @@
 # eferiado
-Um pacote para descobrir se um determinado dia é feriado nacional 📅
+Um pacote para descobrir se um determinado dia é feriado nacional ou regional 📅
 
 ### Como utilizar o pacote ? 📝
 
