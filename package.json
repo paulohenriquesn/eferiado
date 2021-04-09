@@ -1,7 +1,7 @@
 {
   "name": "eferiado",
   "publishConfig": "eferiado",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Um pacote para descobrir se um determinado dia é feriado",
   "main": "index.js",
   "repository": {
@@ -18,7 +18,8 @@
   "author": "Paulo Henrique",
   "contributors": [
     "Felipe Correa @felps-dev",
-    "Rafael Antunes @rmrantunes"
+    "Rafael Antunes @rmrantunes",
+    "Eduardo Oliveira @EduardoJM"
   ],
   "license": "ISC",
   "bugs": {
