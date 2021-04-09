@@ -8,7 +8,7 @@ export interface RegionalHoliday {
 }
 
 export interface Holidays {
-    date: string;
+    data: string;
     nacionais: NationalHoliday[];
     regionais: RegionalHoliday[];
 }
