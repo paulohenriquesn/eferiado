@@ -1,6 +1,12 @@
 # eferiado
 Um pacote para descobrir se um determinado dia é feriado nacional ou regional 📅
 
+![](https://img.shields.io/npm/dw/eferiado)
+![](https://img.shields.io/npm/v/eferiado)
+![](https://img.shields.io/github/contributors/paulohenriquesn/eferiado)
+![](https://img.shields.io/npm/l/eferiado)
+![](https://img.shields.io/github/license/paulohenriquesn/eferiado)
+
 ### Como utilizar o pacote ? 📝
 
 1. Instale o pacote 👇
