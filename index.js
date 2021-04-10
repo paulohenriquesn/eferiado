@@ -9,7 +9,6 @@ const getHolidaysByState = (estado, data) => {
     }).filter(({data}) => date ? data === date : true)
 }
 
-
 const getHolidaysByDate = (date) => {
     const returnedObject = { 
         nacionais: [],
@@ -47,4 +46,5 @@ const getHolidaysByDate = (date) => {
 
     return returnedObject;
 }
+
 module.exports = { getHolidaysByDate, getHolidaysByState };
