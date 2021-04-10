@@ -36,6 +36,7 @@ export interface NationalHoliday {
 export interface RegionalHoliday {
     nome: string;
     estado: State;
+    data?: string;
 }
 
 export interface Holidays {
