@@ -36,13 +36,13 @@ export interface NationalHoliday {
 export interface RegionalHoliday {
     nome: string;
     estado: State;
-    data?: string;
+    data: string;
 }
 
 export interface Holidays {
     data: string;
     nacionais: NationalHoliday[];
-    regionais: RegionalHoliday[];
+    regionais: Omit<RegionalHoliday, "data">[];
 }
 
 export function getHolidaysByDate(date: DateType) : Holidays;
