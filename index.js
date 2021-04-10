@@ -1,17 +1,21 @@
+const { handleDateFormat } = require('./src/app-utils');
 const feriados = require('./src/feriados');
 const funcs = require('./src/functions')
 
-const isDateHoliday = (date) => {
+const getHolidaysByState = (estado, data) => {
+    const date = data && handleDateFormat(data)
+    return feriados.regionais.filter((feriadoRegional) => {
+        return estado === feriadoRegional.estado
+    }).filter(({data}) => date ? data === date : true)
+}
+
+const getHolidaysByDate = (date) => {
     const returnedObject = { 
         nacionais: [],
         regionais: [],
     };
 
-    if (date instanceof Date) {
-        date = String(date.getDate()).padStart(2, '0') + '/' + String(date.getMonth() + 1).padStart(2, '0')
-    } else {
-        [date] = date.match(/(\d\d\/\d\d)+/);
-    }
+    date = handleDateFormat(date)
 
     returnedObject.data = date
 
@@ -42,4 +46,5 @@ const isDateHoliday = (date) => {
 
     return returnedObject;
 }
-module.exports = isDateHoliday;
+
+module.exports = { getHolidaysByDate, getHolidaysByState };
